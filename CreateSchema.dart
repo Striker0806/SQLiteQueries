@@ -16,7 +16,7 @@ Future<Database> initializeDB() async {
         "TaskID INTEGER PRIMARY KEY,"
         "Name TEXT NOT NULL,"
         "Description TEXT,"
-        "CompletionStatus TEXT CHECK(CompletionStatus IN ('Completed', 'Not Completed')) DEFAULT 'Not Completed',"
+        "CompletionStatus TEXT CHECK(CompletionStatus IN ('Completed', "Routines", "Stopped", "OnGoing", "Scheduled",'Not Completed')) DEFAULT 'Not Completed',"
         "StartDate TEXT,"
         "CompletionDate TEXT,"
         "AchievementBadge TEXT,"
